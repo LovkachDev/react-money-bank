@@ -1,0 +1,201 @@
+.form__title
+{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top:70px;
+    margin: auto;
+}
+.input__value
+{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+progress
+{
+    align-self: center;
+    width: 300px;
+    padding: 15px;
+    display: none;
+}
+.input__area
+{
+    margin-top: 30px;
+}
+.form__input
+{
+    padding: 10px;
+    margin-right:10px;
+    border:1px solid #c7c6c6;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+input::-webkit-input-placeholder { color: #c7c6c6; }
+.button__area
+{
+    display: flex;
+    justify-content: center;
+    width:100%;
+}
+.form__button
+{
+    padding: 10px 50px;
+    border-radius: 5px;
+    font-size: 14px;
+    border:none;
+    background-color: #4ccc9f;
+    color:#fff;
+}
+.history__balance
+{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+    top:150px;
+}
+.element
+{
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    width:450px;
+    padding: 20px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color:rgb(86, 86, 86);
+    background-color: #a2efae4c;
+    border: 1px solid rgba(4, 201, 4 ,0.4 );
+}
+ul{
+    padding: 0;
+}
+.plus
+{
+    color:rgb(12, 133, 3);
+    font-weight: 600;
+}
+
+
+
+progress
+{
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    left: -777px;
+}
+
+.progress-bar
+{
+    
+    overflow: hidden;
+    background: #4ccc9f;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.progress-bg
+{
+    padding: 5px;
+    background: #e6e9ed;
+    position: relative;
+    height: 8px;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.progress-bar:after
+{
+  background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+  -webkit-background-size: 40px 40px;
+  background-size: 40px 40px;
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@keyframes progress_bar {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: -40px 0;
+    }
+  }
+  
+  .progress-bar
+  {
+    transition: width 1s linear;
+  }
+  
+  .progress-bar:after
+  {
+    animation: progress_bar 0.8s linear infinite;
+  }
+
+
+
+@media(max-width:530px){
+    .element
+    {
+        width:350px;
+        padding: 17px;
+        font-size: 16px;
+    }
+    .form
+    {
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .input__area
+    {
+        justify-content: center;
+    }
+    .input__value
+    {
+        font-size: 18px;
+    }
+    .form__input
+    {
+        width: 95%;
+    }
+}
+@media(max-width:420px){
+    .element
+    {
+        width:270px;
+        padding: 17px;
+        font-size: 16px;
+    }
+    .form
+    {
+        max-width: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .form__input
+    {
+        padding: 15px 10px;
+    }
+    .form__button
+    {
+        padding: 10px 50px;
+    }
+}
